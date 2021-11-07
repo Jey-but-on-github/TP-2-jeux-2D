@@ -4,6 +4,7 @@ export (int) var speed = 300;
 var velocity = Vector2();
 
 func get_input():
+	#movement input#
 	velocity = Vector2()
 	if Input.is_action_pressed("up"):
 		velocity.y -= 1
@@ -14,7 +15,7 @@ func get_input():
 	if Input.is_action_pressed("right"):
 		velocity.x += 1
 	velocity = velocity.normalized() * speed
-
-func _physics_process(delta):
+	
+func _physics_process(_delta):
 	get_input()
 	velocity = move_and_slide(velocity)
