@@ -45,10 +45,7 @@ margin_bottom = 267.0
 size_flags_horizontal = 3
 
 [node name="TextEdit" type="Label" parent="VBoxContainer/CenterContainer/CenterContainer"]
-
 margin_left = 100.0
-
-
 margin_top = 76.0
 margin_right = 1437.0
 margin_bottom = 190.0
