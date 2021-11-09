@@ -45,7 +45,15 @@ margin_bottom = 267.0
 size_flags_horizontal = 3
 
 [node name="TextEdit" type="Label" parent="VBoxContainer/CenterContainer/CenterContainer"]
+<<<<<<< HEAD
 margin_left = 482.0
+=======
+<<<<<<< HEAD
+margin_left = 100.0
+=======
+margin_left = 482.0
+>>>>>>> MapTuto
+>>>>>>> eba60ff1bdd928110b5744c7582d8db6740fbd39
 margin_top = 76.0
 margin_right = 1437.0
 margin_bottom = 190.0

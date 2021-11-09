@@ -3,9 +3,9 @@ extends KinematicBody2D
 export var speed = 500
 var velocity = Vector2()
 
-func start(dir, pos):
-	rotation = dir
+func start(pos, rot):
 	position = pos
+	rotation = rot
 	velocity = Vector2(speed, 0).rotated(rotation)
 
 func _physics_process(delta):
