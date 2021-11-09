@@ -52,7 +52,7 @@ fire={
 
 2d_physics/layer_1="Joueur"
 2d_physics/layer_2="Zombie"
-2d_physics/layer_3="Ennemi"
+2d_physics/layer_3="Mur"
 
 [physics]
 
