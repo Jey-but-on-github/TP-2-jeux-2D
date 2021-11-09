@@ -16,7 +16,7 @@ texture = ExtResource( 1 )
 position = Vector2( 0, 16 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0.42688, 4.69559 )
+position = Vector2( -80.6789, 1.70748 )
 shape = SubResource( 1 )
 
 [node name="GunCooldown" type="Timer" parent="."]
