@@ -4,6 +4,7 @@ export (int) var speed = 300;
 var velocity = Vector2();
 var bullet = preload("res://Scene/Player/Bullet.tscn")
 var can_shoot = true
+var is_gun = true
 
 func get_input():
 	#movement input#
@@ -19,10 +20,13 @@ func get_input():
 		velocity.x += 1
 	if Input.is_action_just_pressed("fire"):
 		shoot()
+	if Input.is_action_just_pressed("switch"):
+		switch()
 	velocity = velocity.normalized() * speed
 
 func shoot():
-	if(can_shoot == true):
+	if(can_shoot == true && is_gun == true):
+		print("weapon fired!")
 		var b = bullet.instance()
 		b.start($Muzzle.global_position, rotation)
 		get_parent().add_child(b)
@@ -31,6 +35,16 @@ func shoot():
 
 func _on_ShootCooldown_timeout():
 	can_shoot = true
+
+func switch():
+	#switching to the flashlight
+	if(is_gun == true): 
+		is_gun = false
+		$Gun/GunSprite.set_region(true)
+	#switching back to the gun
+	else:
+		is_gun = true
+		$Gun/GunSprite.set_region(false)
 
 
 func _physics_process(_delta):
