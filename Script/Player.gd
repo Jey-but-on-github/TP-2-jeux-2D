@@ -50,3 +50,6 @@ func switch():
 func _physics_process(_delta):
 	get_input()
 	velocity = move_and_slide(velocity)
+
+func hit():
+	print("ded")

@@ -9,7 +9,7 @@ radius = 53.241
 [sub_resource type="CircleShape2D" id=2]
 radius = 522.238
 
-[node name="KinematicBody2D" type="KinematicBody2D"]
+[node name="Ennemi" type="KinematicBody2D"]
 scale = Vector2( 0.5, 0.5 )
 script = ExtResource( 2 )
 
