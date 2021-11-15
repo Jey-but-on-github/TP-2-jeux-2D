@@ -1,21 +1,8 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=2 format=2]
 
 [ext_resource path="res://Scene/Player/Player.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Scene/Ennemi.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Scene/Mur.tscn" type="PackedScene" id=3]
 
 [node name="Main" type="Node"]
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 349.311, 240.416 )
-collision_layer = 3
-collision_mask = 3
-
-[node name="Ennemi" parent="." instance=ExtResource( 2 )]
-position = Vector2( 382.008, 628.833 )
-collision_mask = 3
-
-[node name="Mur" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1180.46, 335.101 )
-collision_layer = 2
-collision_mask = 2

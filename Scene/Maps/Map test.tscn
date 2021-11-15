@@ -8,7 +8,7 @@
 [node name="Test Map" type="Node"]
 
 [node name="Sprite" parent="." instance=ExtResource( 3 )]
-position = Vector2( 759.378, 131.373 )
+position = Vector2( 743.332, 133.261 )
 scale = Vector2( 186.865, 3.56759 )
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
@@ -40,9 +40,6 @@ position = Vector2( 2023.56, 1751.42 )
 rotation = 1.5708
 scale = Vector2( -1.08181, -15.6201 )
 
-[node name="Mur" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1196.09, 575.382 )
-
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 512.421, 449.492 )
 
@@ -50,9 +47,12 @@ position = Vector2( 512.421, 449.492 )
 current = true
 
 [node name="Light2D" type="Light2D" parent="Player"]
-position = Vector2( 2.22705, 5.6319 )
+position = Vector2( 1.81427, 3.62622 )
+scale = Vector2( 8.07906, 8.07906 )
 texture = ExtResource( 4 )
-energy = 0.0
+shadow_enabled = true
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
-color = Color( 0, 0, 0, 1 )
+
+[node name="KinematicBody2D7" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1106.21, 443.492 )
