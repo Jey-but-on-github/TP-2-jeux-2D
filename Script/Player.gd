@@ -29,6 +29,7 @@ func shoot():
 		print("weapon fired!")
 		var b = bullet.instance()
 		b.start($Muzzle.global_position, rotation)
+		$FireSFX.play()
 		get_parent().add_child(b)
 		can_shoot = false
 		$ShootCooldown.start()
@@ -41,10 +42,12 @@ func switch():
 	if(is_gun == true): 
 		is_gun = false
 		$Gun/GunSprite.set_region(true)
+		$FlashSFX.play()
 	#switching back to the gun
 	else:
 		is_gun = true
 		$Gun/GunSprite.set_region(false)
+		$GunSFX.play()
 
 
 func _physics_process(_delta):
@@ -52,4 +55,5 @@ func _physics_process(_delta):
 	velocity = move_and_slide(velocity)
 
 func hit():
+	$PlayerDeathSFX.play()
 	print("ded")
