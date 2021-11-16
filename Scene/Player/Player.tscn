@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Ressource/Characters/survivor.png" type="Texture" id=1]
 [ext_resource path="res://Script/Player.gd" type="Script" id=2]
@@ -7,6 +7,8 @@
 [ext_resource path="res://Ressource/sfx/player/gun.wav" type="AudioStream" id=5]
 [ext_resource path="res://Ressource/sfx/player/flashlight.wav" type="AudioStream" id=6]
 [ext_resource path="res://Ressource/sfx/player/oof.wav" type="AudioStream" id=7]
+[ext_resource path="res://Ressource/Weapons/flash.png" type="Texture" id=8]
+[ext_resource path="res://Ressource/Map Asset/light.png" type="Texture" id=9]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 52.6387
@@ -29,6 +31,18 @@ position = Vector2( 48, 0 )
 [node name="Gun" parent="." instance=ExtResource( 3 )]
 position = Vector2( 40, 0 )
 rotation = -1.5708
+
+[node name="PassiveLight" type="Light2D" parent="."]
+position = Vector2( 1.81427, 3.62622 )
+scale = Vector2( 8.07906, 8.07906 )
+texture = ExtResource( 9 )
+shadow_enabled = true
+
+[node name="Flashlight" type="Light2D" parent="."]
+position = Vector2( 69.3321, 6.47628 )
+texture = ExtResource( 8 )
+mode = 2
+shadow_enabled = true
 
 [node name="ShootCooldown" type="Timer" parent="."]
 

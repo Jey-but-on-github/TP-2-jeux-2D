@@ -42,11 +42,13 @@ func switch():
 	#switching to the flashlight
 	if(is_gun == true): 
 		is_gun = false
+		$Flashlight.set_enabled(true)
 		$Gun/GunSprite.set_region(true)
 		$FlashSFX.play()
 	#switching back to the gun
 	else:
 		is_gun = true
+		$Flashlight.set_enabled(false)
 		$Gun/GunSprite.set_region(false)
 		$GunSFX.play()
 
