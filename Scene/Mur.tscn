@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Ressource/Map Asset/Mur.jpg" type="Texture" id=1]
+[ext_resource path="res://Script/Mur.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 151.056, 151.628 )
@@ -11,6 +12,7 @@ polygon = PoolVector2Array( -149.327, -149.348, 148.569, -148.753, 148.569, 148.
 [node name="Mur" type="KinematicBody2D"]
 collision_layer = 4
 collision_mask = 3
+script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )

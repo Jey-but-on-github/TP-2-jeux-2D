@@ -62,6 +62,7 @@ func hit():
 	remove_child($Sprite)
 	remove_child($Collision)
 	remove_child($Gun)
+	remove_child($PassiveLight)
 	dead = true
 	$GameoverDelay.start()
 
