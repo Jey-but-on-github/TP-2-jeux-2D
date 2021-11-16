@@ -40,6 +40,7 @@ shadow_enabled = true
 
 [node name="Flashlight" type="Light2D" parent="."]
 position = Vector2( 69.3321, 6.47628 )
+enabled = false
 texture = ExtResource( 8 )
 mode = 2
 shadow_enabled = true
