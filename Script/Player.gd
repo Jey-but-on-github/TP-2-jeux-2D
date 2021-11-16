@@ -5,6 +5,7 @@ var velocity = Vector2();
 var bullet = preload("res://Scene/Player/Bullet.tscn")
 var can_shoot = true
 var is_gun = true
+var dead = false
 
 func get_input():
 	#movement input#
@@ -56,4 +57,11 @@ func _physics_process(_delta):
 
 func hit():
 	$PlayerDeathSFX.play()
-	print("ded")
+	remove_child($Sprite)
+	remove_child($Collision)
+	remove_child($Gun)
+	dead = true
+	$GameoverDelay.start()
+
+func _on_GameoverDelay_timeout():
+	get_tree().change_scene("res://Scene/GameOver.tscn")

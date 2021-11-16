@@ -34,4 +34,6 @@ func hit():
 		vie -= 1
 	else:
 		$ZombieDeathSFX.play()
-		queue_free()
+		remove_child($Sprite)
+		remove_child($CollisionShape2D)
+		remove_child($Area2D)
