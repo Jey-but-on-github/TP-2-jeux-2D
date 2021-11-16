@@ -15,6 +15,7 @@ func _physics_process(delta):
 			collision.collider.hit()
 
 func _on_Area2D_body_entered(body):
+	print(body)
 	if(body.name == "Player"):
 		if(chasing == false):
 			if(rng == 1): 

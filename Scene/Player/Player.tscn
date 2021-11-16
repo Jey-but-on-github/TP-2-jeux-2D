@@ -13,7 +13,9 @@
 [sub_resource type="CircleShape2D" id=1]
 radius = 52.6387
 
-[node name="Player" type="KinematicBody2D"]
+[node name="Player" type="KinematicBody2D" groups=[
+"joueur",
+]]
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -42,7 +44,6 @@ shadow_enabled = true
 position = Vector2( 69.3321, 6.47628 )
 enabled = false
 texture = ExtResource( 8 )
-mode = 2
 shadow_enabled = true
 
 [node name="ShootCooldown" type="Timer" parent="."]

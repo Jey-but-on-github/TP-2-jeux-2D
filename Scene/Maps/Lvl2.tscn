@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scene/Mur.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scene/Player/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Ressource/Map Asset/plancher.jpg" type="Texture" id=3]
+[ext_resource path="res://Scene/Exits/Exit2.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scene/Cle.tscn" type="PackedScene" id=5]
 
 [node name="Niveau 1" type="Node"]
 
@@ -140,3 +142,11 @@ position = Vector2( -0.309006, -0.99823 )
 scale = Vector2( -21.5103, 0.380986 )
 current = true
 zoom = Vector2( 0.6, 0.6 )
+
+[node name="Exit1" parent="." instance=ExtResource( 4 )]
+position = Vector2( -1428.16, 394.12 )
+scale = Vector2( 9.49457, 2.71571 )
+
+[node name="Clé" parent="." instance=ExtResource( 5 )]
+position = Vector2( -673.261, 1542.99 )
+scale = Vector2( 0.127078, 0.143726 )

@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scene/Mur.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Ressource/Map Asset/plancher.jpg" type="Texture" id=2]
+[ext_resource path="res://Scene/Player/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scene/Exits/Exit3.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scene/Cle.tscn" type="PackedScene" id=5]
 
 [node name="Node" type="Node"]
 
@@ -9,6 +12,10 @@
 position = Vector2( 802.811, 373.074 )
 scale = Vector2( 40.1351, 39.5139 )
 texture = ExtResource( 2 )
+
+[node name="Exit1" parent="." instance=ExtResource( 4 )]
+position = Vector2( 8820.29, -6936.96 )
+scale = Vector2( 34.9025, 30.292 )
 
 [node name="Mur" parent="." instance=ExtResource( 1 )]
 position = Vector2( -1061.59, 681.231 )
@@ -245,3 +252,12 @@ scale = Vector2( -7.09773, 0.464369 )
 [node name="Mur3" parent="." instance=ExtResource( 1 )]
 position = Vector2( -2060.72, 459.831 )
 scale = Vector2( -0.497727, 1.54437 )
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+position = Vector2( -1870.15, 480.993 )
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+
+[node name="Clé" parent="." instance=ExtResource( 5 )]
+position = Vector2( 2596.08, 10106.2 )
+scale = Vector2( 0.499064, 0.499532 )
