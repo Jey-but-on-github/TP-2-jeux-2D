@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scene/Mur.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Ressource/Map Asset/plancher.jpg" type="Texture" id=2]
 [ext_resource path="res://Scene/Player/Player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scene/Exits/Exit3.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scene/Cle.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scene/EnnemiNiv3.tscn" type="PackedScene" id=6]
 
 [node name="Node" type="Node"]
 
@@ -237,6 +238,30 @@ scale = Vector2( 2.11234, 10.2809 )
 position = Vector2( -446.739, 9924.99 )
 scale = Vector2( 2.11234, 10.2809 )
 
+[node name="Mur60" parent="." instance=ExtResource( 1 )]
+position = Vector2( 527.576, 322.977 )
+scale = Vector2( 0.752339, 2.0809 )
+
+[node name="Mur61" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1359.24, 109.543 )
+scale = Vector2( 6.27234, 0.680899 )
+
+[node name="Mur62" parent="." instance=ExtResource( 1 )]
+position = Vector2( 4125.03, 114.883 )
+scale = Vector2( 6.27234, 0.680899 )
+
+[node name="Mur63" parent="." instance=ExtResource( 1 )]
+position = Vector2( 5416.79, -2899.52 )
+scale = Vector2( 10.8323, 1.0809 )
+
+[node name="Mur64" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1636.14, 2886.22 )
+scale = Vector2( 0.75234, 4.2409 )
+
+[node name="Mur65" parent="." instance=ExtResource( 1 )]
+position = Vector2( -2103.64, 3701.3 )
+scale = Vector2( 0.75234, 4.2409 )
+
 [node name="Mur39" parent="." instance=ExtResource( 1 )]
 position = Vector2( 6798.84, -3394.45 )
 scale = Vector2( 1.95899, 12.6118 )
@@ -254,10 +279,156 @@ position = Vector2( -2060.72, 459.831 )
 scale = Vector2( -0.497727, 1.54437 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( -1870.15, 480.993 )
+position = Vector2( -1798.32, 474.79 )
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+current = true
+zoom = Vector2( 0.6, 0.6 )
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color( 0, 0, 0, 1 )
 
 [node name="Clé" parent="." instance=ExtResource( 5 )]
 position = Vector2( 2596.08, 10106.2 )
 scale = Vector2( 0.499064, 0.499532 )
+
+[node name="KinematicBody2D" parent="." instance=ExtResource( 6 )]
+position = Vector2( 1343.1, -280 )
+
+[node name="KinematicBody2D2" parent="." instance=ExtResource( 6 )]
+position = Vector2( 195.351, 437.344 )
+
+[node name="KinematicBody2D3" parent="." instance=ExtResource( 6 )]
+position = Vector2( 905.145, 429.793 )
+
+[node name="KinematicBody2D4" parent="." instance=ExtResource( 6 )]
+position = Vector2( 4610.66, 1145.27 )
+
+[node name="KinematicBody2D5" parent="." instance=ExtResource( 6 )]
+position = Vector2( 4461.16, -264.323 )
+
+[node name="KinematicBody2D6" parent="." instance=ExtResource( 6 )]
+position = Vector2( 275.1, 1134.59 )
+
+[node name="KinematicBody2D7" parent="." instance=ExtResource( 6 )]
+position = Vector2( 4820.8, 3747.23 )
+
+[node name="KinematicBody2D8" parent="." instance=ExtResource( 6 )]
+position = Vector2( 4171.41, 2644.79 )
+
+[node name="KinematicBody2D9" parent="." instance=ExtResource( 6 )]
+position = Vector2( 531.833, 2629.69 )
+
+[node name="KinematicBody2D10" parent="." instance=ExtResource( 6 )]
+position = Vector2( 1196.32, 3611.31 )
+
+[node name="KinematicBody2D11" parent="." instance=ExtResource( 6 )]
+position = Vector2( 2666.72, 9034.86 )
+
+[node name="KinematicBody2D12" parent="." instance=ExtResource( 6 )]
+position = Vector2( 3825.85, 9140.69 )
+
+[node name="KinematicBody2D13" parent="." instance=ExtResource( 6 )]
+position = Vector2( 4183.66, 9926.88 )
+
+[node name="KinematicBody2D14" parent="." instance=ExtResource( 6 )]
+position = Vector2( 3874.21, 10841.8 )
+
+[node name="KinematicBody2D15" parent="." instance=ExtResource( 6 )]
+position = Vector2( 2851.69, 10868.7 )
+
+[node name="KinematicBody2D16" parent="." instance=ExtResource( 6 )]
+position = Vector2( 2037.7, 10862 )
+
+[node name="KinematicBody2D17" parent="." instance=ExtResource( 6 )]
+position = Vector2( 1452.43, 10352.6 )
+
+[node name="KinematicBody2D18" parent="." instance=ExtResource( 6 )]
+position = Vector2( 1378.43, 9659.7 )
+
+[node name="KinematicBody2D19" parent="." instance=ExtResource( 6 )]
+position = Vector2( 1748.99, 9115.69 )
+
+[node name="KinematicBody2D20" parent="." instance=ExtResource( 6 )]
+position = Vector2( 565.005, 9129.14 )
+
+[node name="KinematicBody2D21" parent="." instance=ExtResource( 6 )]
+position = Vector2( 538.097, 9956.58 )
+
+[node name="KinematicBody2D22" parent="." instance=ExtResource( 6 )]
+position = Vector2( 854.274, 10817.7 )
+
+[node name="KinematicBody2D23" parent="." instance=ExtResource( 6 )]
+position = Vector2( 4547.49, 10891.7 )
+
+[node name="KinematicBody2D24" parent="." instance=ExtResource( 6 )]
+position = Vector2( 4894.48, 10297.1 )
+
+[node name="KinematicBody2D25" parent="." instance=ExtResource( 6 )]
+position = Vector2( 4773.39, 9362.02 )
+
+[node name="KinematicBody2D26" parent="." instance=ExtResource( 6 )]
+position = Vector2( -3028.04, 3717.58 )
+
+[node name="KinematicBody2D27" parent="." instance=ExtResource( 6 )]
+position = Vector2( -3068.36, 2165.35 )
+
+[node name="KinematicBody2D28" parent="." instance=ExtResource( 6 )]
+position = Vector2( -1395.18, 2366.94 )
+
+[node name="KinematicBody2D29" parent="." instance=ExtResource( 6 )]
+position = Vector2( -1395.18, 2366.94 )
+
+[node name="KinematicBody2D30" parent="." instance=ExtResource( 6 )]
+position = Vector2( -4531.2, -1328.47 )
+
+[node name="KinematicBody2D31" parent="." instance=ExtResource( 6 )]
+position = Vector2( -4549.15, -5656.68 )
+
+[node name="KinematicBody2D32" parent="." instance=ExtResource( 6 )]
+position = Vector2( -3471.59, -4094.21 )
+
+[node name="KinematicBody2D33" parent="." instance=ExtResource( 6 )]
+position = Vector2( -2214.43, -5656.68 )
+
+[node name="KinematicBody2D34" parent="." instance=ExtResource( 6 )]
+position = Vector2( -1998.92, -4112.17 )
+
+[node name="KinematicBody2D35" parent="." instance=ExtResource( 6 )]
+position = Vector2( -1082.99, -5495.04 )
+
+[node name="KinematicBody2D36" parent="." instance=ExtResource( 6 )]
+position = Vector2( 748.865, -5584.84 )
+
+[node name="KinematicBody2D37" parent="." instance=ExtResource( 6 )]
+position = Vector2( -149.104, -4776.67 )
+
+[node name="KinematicBody2D38" parent="." instance=ExtResource( 6 )]
+position = Vector2( 2446, -2098.8 )
+
+[node name="KinematicBody2D39" parent="." instance=ExtResource( 6 )]
+position = Vector2( 6208.49, -2000.02 )
+
+[node name="KinematicBody2D40" parent="." instance=ExtResource( 6 )]
+position = Vector2( 6289.31, -3355.96 )
+
+[node name="KinematicBody2D41" parent="." instance=ExtResource( 6 )]
+position = Vector2( 3347.74, -5709.21 )
+
+[node name="KinematicBody2D42" parent="." instance=ExtResource( 6 )]
+position = Vector2( 3472.19, -4668.35 )
+
+[node name="KinematicBody2D43" parent="." instance=ExtResource( 6 )]
+position = Vector2( 6063.03, -5607.39 )
+
+[node name="KinematicBody2D44" parent="." instance=ExtResource( 6 )]
+position = Vector2( 6142.23, -4362.88 )
+
+[node name="KinematicBody2D45" parent="." instance=ExtResource( 6 )]
+position = Vector2( -2801.55, -2531.02 )
+
+[node name="KinematicBody2D46" parent="." instance=ExtResource( 6 )]
+position = Vector2( 2735.31, 3183.62 )
+
+[node name="KinematicBody2D47" parent="." instance=ExtResource( 6 )]
+position = Vector2( 3551.31, 871.624 )

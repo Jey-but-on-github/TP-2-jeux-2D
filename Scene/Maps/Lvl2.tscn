@@ -1,18 +1,24 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scene/Mur.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scene/Player/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Ressource/Map Asset/plancher.jpg" type="Texture" id=3]
 [ext_resource path="res://Scene/Exits/Exit2.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scene/Cle.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scene/EnnemiNiv2.tscn" type="PackedScene" id=6]
 
 [node name="Niveau 1" type="Node"]
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color( 0, 0, 0, 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
 scale = Vector2( 12.8492, -12.6721 )
 texture = ExtResource( 3 )
+
+[node name="Exit1" parent="." instance=ExtResource( 4 )]
+position = Vector2( -1428.16, 394.12 )
+scale = Vector2( 9.49457, 2.71571 )
 
 [node name="Mur" parent="." instance=ExtResource( 1 )]
 position = Vector2( 447.437, 698.676 )
@@ -143,10 +149,36 @@ scale = Vector2( -21.5103, 0.380986 )
 current = true
 zoom = Vector2( 0.6, 0.6 )
 
-[node name="Exit1" parent="." instance=ExtResource( 4 )]
-position = Vector2( -1428.16, 394.12 )
-scale = Vector2( 9.49457, 2.71571 )
-
 [node name="Clé" parent="." instance=ExtResource( 5 )]
 position = Vector2( -673.261, 1542.99 )
 scale = Vector2( 0.127078, 0.143726 )
+
+[node name="KinematicBody2D" parent="." instance=ExtResource( 6 )]
+position = Vector2( -830.806, 918.259 )
+
+[node name="KinematicBody2D2" parent="." instance=ExtResource( 6 )]
+position = Vector2( -295.995, 1570.79 )
+
+[node name="KinematicBody2D3" parent="." instance=ExtResource( 6 )]
+position = Vector2( 1688.52, 1466.52 )
+
+[node name="KinematicBody2D4" parent="." instance=ExtResource( 6 )]
+position = Vector2( 941.804, 1372.34 )
+
+[node name="KinematicBody2D5" parent="." instance=ExtResource( 6 )]
+position = Vector2( 1701.97, 521.356 )
+
+[node name="KinematicBody2D6" parent="." instance=ExtResource( 6 )]
+position = Vector2( 1493.43, 181.634 )
+
+[node name="KinematicBody2D7" parent="." instance=ExtResource( 6 )]
+position = Vector2( 1315.16, 507.902 )
+
+[node name="KinematicBody2D8" parent="." instance=ExtResource( 6 )]
+position = Vector2( -705.396, 58.8891 )
+
+[node name="KinematicBody2D9" parent="." instance=ExtResource( 6 )]
+position = Vector2( -247.645, 523.046 )
+
+[node name="KinematicBody2D10" parent="." instance=ExtResource( 6 )]
+position = Vector2( 516.894, 98.3027 )

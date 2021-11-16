@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scene/Mur.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scene/plancher.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scene/Player/Player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scene/Exits/Exit LV1.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scene/Cle.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scene/Ennemi.tscn" type="PackedScene" id=6]
 
 [node name="Test Map" type="Node"]
 
@@ -87,6 +88,7 @@ current = true
 zoom = Vector2( 0.7, 0.7 )
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color( 0, 0, 0, 1 )
 
 [node name="KinematicBody2D7" parent="." instance=ExtResource( 1 )]
 position = Vector2( 1106.21, 443.492 )
@@ -94,3 +96,21 @@ position = Vector2( 1106.21, 443.492 )
 [node name="Clé" parent="." instance=ExtResource( 5 )]
 position = Vector2( 205.332, 1422.98 )
 scale = Vector2( 0.231452, 0.231367 )
+
+[node name="Ennemi" parent="." instance=ExtResource( 6 )]
+position = Vector2( 1113.72, 805.327 )
+
+[node name="Ennemi2" parent="." instance=ExtResource( 6 )]
+position = Vector2( 1102.4, 7.71002 )
+
+[node name="Ennemi3" parent="." instance=ExtResource( 6 )]
+position = Vector2( 710.407, 1422.46 )
+
+[node name="Ennemi4" parent="." instance=ExtResource( 6 )]
+position = Vector2( 2649, 1301.29 )
+
+[node name="Ennemi5" parent="." instance=ExtResource( 6 )]
+position = Vector2( 2639.49, 74.0332 )
+
+[node name="Ennemi6" parent="." instance=ExtResource( 6 )]
+position = Vector2( 3353.7, -254.088 )

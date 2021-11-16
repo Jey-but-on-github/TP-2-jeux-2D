@@ -130,4 +130,5 @@ margin_bottom = 1080.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
+[connection signal="pressed" from="VBoxContainer/HBoxContainer2/VBoxContainer/Jouer" to="." method="_on_Jouer_pressed"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer2/VBoxContainer/Quitter" to="." method="_on_Quitter_pressed"]

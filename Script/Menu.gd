@@ -18,3 +18,7 @@ func _ready():
 
 func _on_Quitter_pressed():
 	get_tree().quit()
+
+
+func _on_Jouer_pressed():
+	Global.goto_scene("res://Scene/Maps/Lvl1.tscn")
