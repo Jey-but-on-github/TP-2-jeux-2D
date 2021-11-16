@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scene/Exits/Exit2.tscn" type="PackedScene" id=1]
+
+[node name="Exit1" instance=ExtResource( 1 )]
+next_scene = "res://Scene/Menu.tscn"

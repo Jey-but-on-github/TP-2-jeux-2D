@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Ressource/Map Asset/light.png" type="Texture" id=1]
+[ext_resource path="res://Ressource/Map Asset/key.png" type="Texture" id=2]
+[ext_resource path="res://Script/cle.gd" type="Script" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 140.382, 42.6741 )
+
+[node name="Clé" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 1.94072, 2.23177 )
+texture = ExtResource( 2 )
+
+[node name="Light2D" type="Light2D" parent="."]
+position = Vector2( 2.5199, -5.03967 )
+scale = Vector2( 26.741, 24.1999 )
+texture = ExtResource( 1 )
+color = Color( 0.945098, 0.886275, 0, 1 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 10.0793, 0 )
+rotation = 3.14159
+scale = Vector2( 1.55117, -2.81436 )
+shape = SubResource( 1 )
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/zombie3.wav-45307e358b67a435d3397b89e7f59502.sample"
+
+[deps]
+
+source_file="res://Ressource/sfx/zombie/zombie3.wav"
+dest_files=[ "res://.import/zombie3.wav-45307e358b67a435d3397b89e7f59502.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
