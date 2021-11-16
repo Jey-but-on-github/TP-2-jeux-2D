@@ -9,10 +9,8 @@
 
 [node name="Niveau 1" type="Node"]
 
-[node name="CanvasModulate" type="CanvasModulate" parent="."]
-color = Color( 0, 0, 0, 1 )
-
 [node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 1.05945, 13.7731 )
 scale = Vector2( 12.8492, -12.6721 )
 texture = ExtResource( 3 )
 
@@ -182,3 +180,6 @@ position = Vector2( -247.645, 523.046 )
 
 [node name="KinematicBody2D10" parent="." instance=ExtResource( 6 )]
 position = Vector2( 516.894, 98.3027 )
+
+[node name="CanvasLayer" type="CanvasModulate" parent="."]
+color = Color( 0, 0, 0, 1 )
