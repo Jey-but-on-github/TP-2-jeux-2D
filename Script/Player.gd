@@ -5,6 +5,7 @@ var velocity = Vector2();
 var bullet = preload("res://Scene/Player/Bullet.tscn")
 var can_shoot = true
 var is_gun = true
+var dead = false
 
 func get_input():
 	#movement input#
@@ -29,6 +30,7 @@ func shoot():
 		print("weapon fired!")
 		var b = bullet.instance()
 		b.start($Muzzle.global_position, rotation)
+		$FireSFX.play()
 		get_parent().add_child(b)
 		can_shoot = false
 		$ShootCooldown.start()
@@ -40,11 +42,15 @@ func switch():
 	#switching to the flashlight
 	if(is_gun == true): 
 		is_gun = false
+		$Flashlight.set_enabled(true)
 		$Gun/GunSprite.set_region(true)
+		$FlashSFX.play()
 	#switching back to the gun
 	else:
 		is_gun = true
+		$Flashlight.set_enabled(false)
 		$Gun/GunSprite.set_region(false)
+		$GunSFX.play()
 
 
 func _physics_process(_delta):
@@ -52,4 +58,12 @@ func _physics_process(_delta):
 	velocity = move_and_slide(velocity)
 
 func hit():
-	print("ded")
+	$PlayerDeathSFX.play()
+	remove_child($Sprite)
+	remove_child($Collision)
+	remove_child($Gun)
+	dead = true
+	$GameoverDelay.start()
+
+func _on_GameoverDelay_timeout():
+	get_tree().change_scene("res://Scene/GameOver.tscn")

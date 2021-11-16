@@ -11,7 +11,7 @@
 position = Vector2( 349.311, 240.416 )
 
 [node name="Ennemi" parent="." instance=ExtResource( 2 )]
-position = Vector2( 382.008, 628.833 )
+position = Vector2( 373.188, 628.833 )
 collision_mask = 3
 
 [node name="Mur" parent="." instance=ExtResource( 3 )]
@@ -19,3 +19,7 @@ position = Vector2( 1180.46, 335.101 )
 collision_layer = 2
 collision_mask = 2
 script = ExtResource( 4 )
+
+[node name="Ennemi2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1194.08, 568.683 )
+vie = 2

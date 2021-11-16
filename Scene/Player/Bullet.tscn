@@ -23,4 +23,5 @@ position = Vector2( 0.0220957, 0.110484 )
 scale = Vector2( 0.781957, 0.732943 )
 texture = ExtResource( 3 )
 energy = 1.36
+mode = 2
 shadow_enabled = true
