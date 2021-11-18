@@ -283,7 +283,7 @@ position = Vector2( -1798.32, 474.79 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 current = true
-zoom = Vector2( 0.6, 0.6 )
+zoom = Vector2( 0.8, 0.8 )
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 color = Color( 0, 0, 0, 1 )
