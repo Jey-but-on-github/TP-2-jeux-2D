@@ -58,10 +58,6 @@ scale = Vector2( 0.199556, 1.22122 )
 position = Vector2( 327.298, 1459.72 )
 scale = Vector2( 0.199556, 1.22122 )
 
-[node name="Mur21" parent="." instance=ExtResource( 1 )]
-position = Vector2( -88.1051, 1358.81 )
-scale = Vector2( 0.199556, 1.22122 )
-
 [node name="Mur22" parent="." instance=ExtResource( 1 )]
 position = Vector2( -562.371, 1410.95 )
 scale = Vector2( 2.03956, 0.22122 )
@@ -69,6 +65,30 @@ scale = Vector2( 2.03956, 0.22122 )
 [node name="Mur23" parent="." instance=ExtResource( 1 )]
 position = Vector2( -399.237, 1513.54 )
 scale = Vector2( 0.15956, 0.472201 )
+
+[node name="Mur21" parent="Mur23" instance=ExtResource( 1 )]
+position = Vector2( 1949.94, -327.678 )
+scale = Vector2( 1.25066, 2.58623 )
+
+[node name="Mur22" parent="Mur23" instance=ExtResource( 1 )]
+position = Vector2( 11678.2, -2136.31 )
+scale = Vector2( 1.25066, 2.84036 )
+
+[node name="Mur23" parent="Mur23" instance=ExtResource( 1 )]
+position = Vector2( 9856.52, -2466.3 )
+scale = Vector2( 6.01379, 0.637905 )
+
+[node name="Mur24" parent="Mur23" instance=ExtResource( 1 )]
+position = Vector2( 13556.3, -2472.65 )
+scale = Vector2( 6.01379, 0.637905 )
+
+[node name="Mur25" parent="Mur23" instance=ExtResource( 1 )]
+position = Vector2( 5634.49, -1481.54 )
+scale = Vector2( 1.50138, 1.99326 )
+
+[node name="Mur26" parent="Mur23" instance=ExtResource( 1 )]
+position = Vector2( 668.523, -345.717 )
+scale = Vector2( 1.50138, 1.31558 )
 
 [node name="Mur12" parent="." instance=ExtResource( 1 )]
 position = Vector2( 1904.96, 307.695 )
@@ -153,33 +173,43 @@ scale = Vector2( 0.127078, 0.143726 )
 
 [node name="KinematicBody2D" parent="." instance=ExtResource( 6 )]
 position = Vector2( -830.806, 918.259 )
+collision_layer = 1
 
 [node name="KinematicBody2D2" parent="." instance=ExtResource( 6 )]
 position = Vector2( -295.995, 1570.79 )
+collision_layer = 1
 
 [node name="KinematicBody2D3" parent="." instance=ExtResource( 6 )]
 position = Vector2( 1688.52, 1466.52 )
+collision_layer = 1
 
 [node name="KinematicBody2D4" parent="." instance=ExtResource( 6 )]
 position = Vector2( 941.804, 1372.34 )
+collision_layer = 1
 
 [node name="KinematicBody2D5" parent="." instance=ExtResource( 6 )]
 position = Vector2( 1701.97, 521.356 )
+collision_layer = 1
 
 [node name="KinematicBody2D6" parent="." instance=ExtResource( 6 )]
 position = Vector2( 1493.43, 181.634 )
+collision_layer = 1
 
 [node name="KinematicBody2D7" parent="." instance=ExtResource( 6 )]
 position = Vector2( 1315.16, 507.902 )
+collision_layer = 1
 
 [node name="KinematicBody2D8" parent="." instance=ExtResource( 6 )]
 position = Vector2( -705.396, 58.8891 )
+collision_layer = 1
 
 [node name="KinematicBody2D9" parent="." instance=ExtResource( 6 )]
 position = Vector2( -247.645, 523.046 )
+collision_layer = 1
 
 [node name="KinematicBody2D10" parent="." instance=ExtResource( 6 )]
 position = Vector2( 516.894, 98.3027 )
+collision_layer = 1
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
-color = Color( 0, 0, 0, 1 )
+position = Vector2( 15.1021, 15.1021 )

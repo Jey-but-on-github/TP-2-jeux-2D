@@ -14,7 +14,7 @@ font_data = ExtResource( 7 )
 [node name="Test Map" type="Node"]
 
 [node name="Sprite" parent="." instance=ExtResource( 2 )]
-position = Vector2( 23944.2, 1144.33 )
+position = Vector2( 23952.7, 1144.33 )
 scale = Vector2( 186.865, 6.1865 )
 
 [node name="Node2D" parent="." instance=ExtResource( 4 )]
@@ -92,6 +92,7 @@ current = true
 zoom = Vector2( 0.7, 0.7 )
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
+position = Vector2( -15.0846, -8.47571 )
 color = Color( 0, 0, 0, 1 )
 
 [node name="KinematicBody2D7" parent="." instance=ExtResource( 1 )]
@@ -99,7 +100,7 @@ position = Vector2( 1191.3, 181.449 )
 scale = Vector2( 1, 4 )
 
 [node name="Clé" parent="." instance=ExtResource( 5 )]
-position = Vector2( 205.332, 1422.98 )
+position = Vector2( 528.143, 1428.02 )
 scale = Vector2( 0.231452, 0.231367 )
 
 [node name="Ennemi" parent="." instance=ExtResource( 6 )]
@@ -137,6 +138,21 @@ margin_bottom = 632.96
 custom_fonts/font = SubResource( 1 )
 text = "Press right click
 to turn on flashlight"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label4" type="Label" parent="."]
+margin_left = 10.5239
+margin_top = 141.788
+margin_right = 563.524
+margin_bottom = 204.788
+custom_fonts/font = SubResource( 1 )
+text = "Do not right clikc when you die the game will have a stroke if you do so
+
+ok thank you"
 align = 1
 valign = 1
 __meta__ = {
