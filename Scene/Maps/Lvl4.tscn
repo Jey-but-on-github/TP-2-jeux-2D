@@ -11,7 +11,7 @@
 [node name="level4" type="Node"]
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 802.811, 373.074 )
+position = Vector2( 800, 376 )
 scale = Vector2( 40.1351, 39.5139 )
 texture = ExtResource( 2 )
 

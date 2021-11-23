@@ -11,7 +11,7 @@
 [node name="level3" type="Node"]
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 1.05945, 13.7731 )
+position = Vector2( -206.4, -59.1644 )
 scale = Vector2( 12.8492, -12.6721 )
 texture = ExtResource( 3 )
 
@@ -34,10 +34,6 @@ scale = Vector2( -0.537729, 0.784368 )
 
 [node name="Mur68" parent="." instance=ExtResource( 1 )]
 position = Vector2( 756.172, -456.462 )
-scale = Vector2( -0.537729, 1.58437 )
-
-[node name="Mur69" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1802.31, -88.2939 )
 scale = Vector2( -0.537729, 1.58437 )
 
 [node name="Mur70" parent="." instance=ExtResource( 1 )]
@@ -140,10 +136,6 @@ scale = Vector2( 0.15956, 0.472201 )
 position = Vector2( 1904.96, 307.695 )
 scale = Vector2( 0.199556, 2.74122 )
 
-[node name="Mur19" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1051.8, 414.044 )
-scale = Vector2( 0.188547, 2.09608 )
-
 [node name="Mur16" parent="." instance=ExtResource( 1 )]
 position = Vector2( 1904.96, 1212.37 )
 scale = Vector2( 0.199556, 3.18122 )
@@ -232,10 +224,6 @@ scale = Vector2( 6.26178, 1.33184 )
 position = Vector2( 1435.24, -3959.73 )
 scale = Vector2( -1.44766, 8.52085 )
 
-[node name="Mur43" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1410.55, 744.654 )
-scale = Vector2( 10.0323, 0.720853 )
-
 [node name="Mur44" parent="." instance=ExtResource( 1 )]
 position = Vector2( 4646.27, 710.713 )
 scale = Vector2( 3.59234, 0.720853 )
@@ -299,14 +287,6 @@ scale = Vector2( 2.11234, 10.2809 )
 [node name="Mur59" parent="." instance=ExtResource( 1 )]
 position = Vector2( -446.739, 9924.99 )
 scale = Vector2( 2.11234, 10.2809 )
-
-[node name="Mur60" parent="." instance=ExtResource( 1 )]
-position = Vector2( 527.576, 322.977 )
-scale = Vector2( 0.752339, 2.0809 )
-
-[node name="Mur61" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1359.24, 109.543 )
-scale = Vector2( 6.27234, 0.680899 )
 
 [node name="Mur62" parent="." instance=ExtResource( 1 )]
 position = Vector2( 4125.03, 114.883 )
@@ -429,7 +409,7 @@ position = Vector2( 27.5338, 587.114 )
 scale = Vector2( 0.180792, -0.555133 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 137.907, 595.355 )
+position = Vector2( 175.064, 584.56 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2( -0.309006, -0.99823 )
@@ -438,13 +418,14 @@ current = true
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 position = Vector2( -7487.69, 7940.93 )
+color = Color( 0, 0, 0, 1 )
 
 [node name="Clé" parent="." instance=ExtResource( 5 )]
 position = Vector2( -673.261, 1542.99 )
 scale = Vector2( 0.127078, 0.143726 )
 
 [node name="KinematicBody2D" parent="." instance=ExtResource( 6 )]
-position = Vector2( -830.806, 918.259 )
+position = Vector2( -339.582, 899.672 )
 collision_layer = 1
 
 [node name="KinematicBody2D2" parent="." instance=ExtResource( 6 )]
@@ -525,7 +506,6 @@ collision_layer = 1
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 color = Color( 0, 0, 0, 1 )
-collision_layer = 1
 
 [node name="KinematicBody2D12" parent="." instance=ExtResource( 6 )]
 position = Vector2( 3825.85, 9140.69 )
@@ -674,3 +654,7 @@ collision_layer = 1
 [node name="music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 7 )
 autoplay = true
+
+[node name="Mur19" parent="." instance=ExtResource( 1 )]
+position = Vector2( 326.294, 853.976 )
+scale = Vector2( 0.208, 1 )

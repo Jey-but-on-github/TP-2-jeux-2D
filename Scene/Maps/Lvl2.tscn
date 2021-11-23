@@ -32,7 +32,7 @@ position = Vector2( -240, 192 )
 scale = Vector2( 1, 2 )
 
 [node name="Mur4" parent="." instance=ExtResource( 2 )]
-position = Vector2( 456, 248 )
+position = Vector2( 507.999, 248 )
 scale = Vector2( 3, -0.217 )
 
 [node name="Mur5" parent="." instance=ExtResource( 2 )]
@@ -62,7 +62,6 @@ scale = Vector2( 0.3, 2 )
 [node name="Mur11" parent="." instance=ExtResource( 2 )]
 position = Vector2( 368, 968 )
 scale = Vector2( 5, 0.5 )
-
 
 [node name="Mur13" parent="." instance=ExtResource( 2 )]
 position = Vector2( 912, 632 )
@@ -115,15 +114,22 @@ collision_layer = 1
 [node name="Exit1" parent="." instance=ExtResource( 6 )]
 position = Vector2( 1232, 1088 )
 next_scene = "res://Scene/Maps/Lvl3.tscn"
-collision_layer = 1
 
 [node name="Mur22" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1248, 1120 )
 scale = Vector2( 0.5, 0.2 )
 collision_layer = 1
 
+[node name="Mur12" parent="." instance=ExtResource( 2 )]
+position = Vector2( -243.25, 731.494 )
+scale = Vector2( 1, 2 )
+
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 position = Vector2( 15.1021, 15.1021 )
+color = Color( 0, 0, 0, 1 )
+
+[node name="Ennemi" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1023.74, 172.248 )
 
 [node name="music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 7 )
