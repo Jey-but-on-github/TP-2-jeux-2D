@@ -15,7 +15,7 @@ font_data = ExtResource( 7 )
 [node name="level1" type="Node"]
 
 [node name="Sprite" parent="." instance=ExtResource( 2 )]
-position = Vector2( 23944.2, 1144.33 )
+position = Vector2( 23952.7, 1144.33 )
 scale = Vector2( 186.865, 6.1865 )
 
 [node name="Node2D" parent="." instance=ExtResource( 4 )]
@@ -93,6 +93,21 @@ margin_bottom = 632.96
 custom_fonts/font = SubResource( 1 )
 text = "Press right click
 to turn on flashlight"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label4" type="Label" parent="."]
+margin_left = 10.5239
+margin_top = 141.788
+margin_right = 563.524
+margin_bottom = 204.788
+custom_fonts/font = SubResource( 1 )
+text = "Do not right clikc when you die the game will have a stroke if you do so
+
+ok thank you"
 align = 1
 valign = 1
 __meta__ = {

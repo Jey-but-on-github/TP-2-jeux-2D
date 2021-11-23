@@ -17,6 +17,7 @@ size = 50
 font_data = ExtResource( 3 )
 
 [node name="MarginContainer" type="MarginContainer"]
+visible = false
 margin_right = 1920.0
 margin_bottom = 1080.0
 script = ExtResource( 2 )
@@ -100,7 +101,7 @@ margin_bottom = 267.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Jouer" type="Button" parent="VBoxContainer/HBoxContainer2/VBoxContainer"]
+[node name="replay" type="Button" parent="VBoxContainer/HBoxContainer2/VBoxContainer"]
 margin_right = 381.0
 margin_bottom = 131.0
 size_flags_horizontal = 3
@@ -131,4 +132,5 @@ margin_bottom = 1080.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
+[connection signal="pressed" from="VBoxContainer/HBoxContainer2/VBoxContainer/replay" to="." method="_on_replay_pressed"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer2/VBoxContainer/Quitter" to="." method="_on_Quitter_pressed"]
