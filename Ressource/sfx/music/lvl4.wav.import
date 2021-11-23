@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/lvl4.wav-00db6bcd2fdf10ed3224b38d383cecce.sample"
+
+[deps]
+
+source_file="res://Ressource/sfx/music/lvl4.wav"
+dest_files=[ "res://.import/lvl4.wav-00db6bcd2fdf10ed3224b38d383cecce.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Scene/Mur.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scene/Player/Player.tscn" type="PackedScene" id=2]
@@ -6,8 +6,9 @@
 [ext_resource path="res://Scene/Exits/Exit2.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scene/Cle.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scene/EnnemiNiv2.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Ressource/sfx/music/lvl3.wav" type="AudioStream" id=7]
 
-[node name="Niveau 1" type="Node"]
+[node name="level3" type="Node"]
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 1.05945, 13.7731 )
@@ -183,3 +184,7 @@ position = Vector2( 516.894, 98.3027 )
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 color = Color( 0, 0, 0, 1 )
+
+[node name="music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+autoplay = true

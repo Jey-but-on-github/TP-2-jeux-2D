@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Scene/Mur.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Ressource/Map Asset/plancher.jpg" type="Texture" id=2]
@@ -6,8 +6,9 @@
 [ext_resource path="res://Scene/Exits/Exit3.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scene/Cle.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scene/EnnemiNiv3.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Ressource/sfx/music/lvl4.wav" type="AudioStream" id=7]
 
-[node name="Node" type="Node"]
+[node name="level4" type="Node"]
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 802.811, 373.074 )
@@ -431,3 +432,7 @@ position = Vector2( 2735.31, 3183.62 )
 
 [node name="KinematicBody2D47" parent="." instance=ExtResource( 6 )]
 position = Vector2( 3551.31, 871.624 )
+
+[node name="music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+autoplay = true
